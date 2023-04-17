@@ -9,6 +9,7 @@ const Cards = (props) => {
                     <div>{card.name}</div>
                 )
             })}
+            <button onClick={props.shuffleCards}>SHUFFLE</button>
         </div>
     )
 }

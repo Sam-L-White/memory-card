@@ -47,10 +47,21 @@ function App() {
         },
     ])
 
+    function shuffleCards(){
+        setCards(prevState => {
+            return(
+                prevState
+                    .map(value => ({ value, sort: Math.random() }))
+                    .sort((a, b) => a.sort - b.sort)
+                    .map(({ value }) => value)
+            )
+        })
+    }
+
     return (
         <div>
             <Scoreboard />
-            <Cards cards={cards}/>
+            <Cards cards={cards} shuffleCards={shuffleCards}/>
         </div>
     );
 }
