@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Scoreboard} from "./components/Scoreboard"
 import {Cards} from "./components/Cards"
 
@@ -47,6 +47,30 @@ function App() {
         },
     ])
 
+    const [score, setScore] = useState(0)
+
+    const [highScore, setHighScore] = useState(0)
+
+    function handleCardClick(e){
+        const {id} = e.target
+        let clickedCard = cards.find(card => card.id == id)
+        if(clickedCard.clicked == false){
+            setCards(prevState => {
+                return prevState.map(card => (card.id == id) ? {...card, clicked: true} : card)
+            });
+            setScore(score + 1)
+        } else {
+            setScore(0)
+            setCards(prevState => {
+                return prevState.map(card => (card.clicked == true) ? {...card, clicked: false} : card)
+            });
+            if(score > highScore){
+                setHighScore(score)  
+            }
+        }
+        shuffleCards()
+    }
+
     function shuffleCards(){
         setCards(prevState => {
             return(
@@ -58,10 +82,14 @@ function App() {
         })
     }
 
+    useEffect(() => {
+        shuffleCards()
+    }, [])
+
     return (
         <div>
-            <Scoreboard />
-            <Cards cards={cards} shuffleCards={shuffleCards}/>
+            <Scoreboard score={score} highScore={highScore}/>
+            <Cards cards={cards} handleCardClick={handleCardClick}/>
         </div>
     );
 }

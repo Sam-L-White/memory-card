@@ -1,15 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const Cards = (props) => {
+
+    const {shuffleCards, cards} = props
 
     return(
         <div>
             {props.cards.map(card => {
                 return(
-                    <div>{card.name}</div>
+                    <div clicked={false} id={card.id} onClick={props.handleCardClick}>{card.name}</div>
                 )
             })}
-            <button onClick={props.shuffleCards}>SHUFFLE</button>
         </div>
     )
 }

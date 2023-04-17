@@ -1,9 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const Scoreboard = (props) => {
 
     return(
-        <div>Hello</div>
+        <div>
+            <div>{props.score}</div>
+            <div>{props.highScore}</div>
+        </div>
     )
 }
 
