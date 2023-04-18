@@ -95,9 +95,35 @@ function App() {
     }, [])
 
     return (
-        <div>
-            <Scoreboard score={score} highScore={highScore}/>
+        <div className="bg-amber-400 h-screen flex flex-col items-center p-10 gap-10">
+            <div className="text-7xl text-white font-bold flex flex-col gap-2">
+                <div className="flex flex-row">
+                    <div className="bg-green-800 w-fit drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">
+                        <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">Br</div>
+                    </div>
+                    <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">eaking </div>
+                </div>
+                <div className="flex flex-row ml-20">
+                    <div className="bg-green-800 w-fit drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">
+                        <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">Ba</div>
+                    </div>
+                    <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">d</div>
+                </div>
+                <div className="flex flex-row -ml-20">
+                    <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">Memor</div>
+                    <div className="bg-green-800 w-fit drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)] w-20 flex flex-row justify-center">
+                        <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">Y</div>
+                    </div>
+                </div>
+                <div className="flex flex-row ml-20">
+                    <div className="bg-green-800 w-fit drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)] ">
+                        <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">Ca</div>
+                    </div>
+                    <div className="drop-shadow-[0_5px_3.5px_rgba(0,0,0,0.8)]">rds</div>
+                </div>
+            </div>
             <Cards cards={cards} handleCardClick={handleCardClick}/>
+            <Scoreboard score={score} highScore={highScore}/>
         </div>
     );
 }
