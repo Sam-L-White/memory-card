@@ -7,43 +7,51 @@ function App() {
     const [cards, setCards] = useState([
         {
             id: 0,
-            name: "Card0",
-            clicked: false
+            name: "Walter White",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Walter_White.png')]"
         },
         {
             id: 1,
-            name: "Card1",
-            clicked: false
+            name: "Jesse Pinkman",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Jesse_Pinkman.png')]"
         },
         {
             id: 2,
-            name: "Card2",
-            clicked: false
+            name: "Gus Fring",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Gus_Fring.png')]"
         },
         {
             id: 3,
-            name: "Card3",
-            clicked: false
+            name: "Saul Goodman",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Saul_Goodman.png')]"
         },
         {
             id: 4,
-            name: "Card4",
-            clicked: false
+            name: "Hank Schrader",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Hank_Schrader.png')]"
         },
         {
             id: 5,
-            name: "Card5",
-            clicked: false
+            name: "Mike Ehrmantraut",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Mike_Ehrmantraut.png')]"
         },
         {
             id: 6,
-            name: "Card6",
-            clicked: false
+            name: "Skyler White",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Skyler_White.png')]"
         },
         {
             id: 7,
-            name: "Card7",
-            clicked: false
+            name: "Tuco Salamanca",
+            clicked: false,
+            imageUrl: "bg-[url('../public/images/Tuco_Salamanca.png')]"
         },
     ])
 
