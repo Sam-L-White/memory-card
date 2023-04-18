@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.a2962141.css",
+    "main.js": "/memory-card/static/js/main.e8897d89.js",
+    "static/media/Jesse_Pinkman.png": "/memory-card/static/media/Jesse_Pinkman.8adbe798077ff68667b6.png",
+    "static/media/Walter_White.png": "/memory-card/static/media/Walter_White.2e045a49cf4022a97a2c.png",
+    "static/media/Skyler_White.png": "/memory-card/static/media/Skyler_White.03993699daf538991ae4.png",
+    "static/media/Gus_Fring.png": "/memory-card/static/media/Gus_Fring.63cc615238ac225f2216.png",
+    "static/media/Mike_Ehrmantraut.png": "/memory-card/static/media/Mike_Ehrmantraut.b7f02d3b679406907ddc.png",
+    "static/media/Saul_Goodman.png": "/memory-card/static/media/Saul_Goodman.8b91644eeeacb46e3a5c.png",
+    "static/media/Tuco_Salamanca.png": "/memory-card/static/media/Tuco_Salamanca.f8d8f0b881558920cf2a.png",
+    "static/media/Hank_Schrader.png": "/memory-card/static/media/Hank_Schrader.4ddbe6a06e93b2b11fae.png",
+    "index.html": "/memory-card/index.html",
+    "main.a2962141.css.map": "/memory-card/static/css/main.a2962141.css.map",
+    "main.e8897d89.js.map": "/memory-card/static/js/main.e8897d89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2962141.css",
+    "static/js/main.e8897d89.js"
+  ]
+}
